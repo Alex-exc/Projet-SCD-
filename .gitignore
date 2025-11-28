@@ -1,0 +1,14 @@
+# Elixir
+/_build/
+deps/
+erl_crash.dump
+
+# DETS / Mnesia
+*.dets
+*.txt
+
+# OS files
+.DS_Store
+
+# ZIP
+*.zip
