@@ -1,0 +1,13 @@
+{application,exkv,
+             [{modules,['Elixir.ExKV','Elixir.ExKV.AntiEntropy',
+                        'Elixir.ExKV.Application','Elixir.ExKV.Config',
+                        'Elixir.ExKV.HTTP.Router',
+                        'Elixir.ExKV.HandoffManager','Elixir.ExKV.HashRing',
+                        'Elixir.ExKV.Rebalancer','Elixir.ExKV.RingManager',
+                        'Elixir.ExKV.Router','Elixir.ExKV.Store']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"exkv"},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.ExKV.Application',[]}}]}.
