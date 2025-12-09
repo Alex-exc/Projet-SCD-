@@ -1,0 +1,8 @@
+def last_hash() do
+    GenServer.call(@server_name,:reading_last_hash)
+end
+...
+def handle_call(:reading_last_hash,_from,state=%{table: table}) do
+   return = :dets.lookup(table, :last_hash) |> Keyword.get(:last_hash, "AAAA")
+   {:reply, return, state}
+end
